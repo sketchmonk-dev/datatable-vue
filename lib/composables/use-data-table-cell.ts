@@ -24,7 +24,7 @@ export function useProvideDataTableCell<D>(cell: Ref<DataTableCellInfo<D>>) {
  * @returns The data table cell context.
  */
 export function useDataTableCell<D>() {
-    const cell = inject<DataTableCellInfo<D>>(DATATABLE_CELL_INJECTION_KEY);
+    const cell = inject<Ref<DataTableCellInfo<D>>>(DATATABLE_CELL_INJECTION_KEY);
     if (!cell) {
         throw new Error("useDataTableCell() must be used within DataTableCell");
     }

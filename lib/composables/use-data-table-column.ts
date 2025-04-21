@@ -25,7 +25,7 @@ export function useProvideDataTableColumn<D>(column: Ref<DataTableColumnInfo<D>>
  * @returns The data table column context.
  */
 export function useDataTableColumn<D>() {
-    const column = inject<DataTableColumnInfo<D>>(DATATABLE_COLUMN_INJECTION_KEY);
+    const column = inject<Ref<DataTableColumnInfo<D>>>(DATATABLE_COLUMN_INJECTION_KEY);
     if (!column) {
         throw new Error("useDataTableColumn() must be used within DataTableColumn");
     }

@@ -1,5 +1,7 @@
 # DataTable Vue
 
+![NPM Version](https://img.shields.io/npm/v/%40sketchmonk%2Fdatatable-vue)
+
 A headless Vue 3 DataTable component library that provides powerful data table functionality while giving you complete control over the UI.
 
 ## Introduction
